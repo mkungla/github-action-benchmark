@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608037625131,
+  "lastUpdate": 1608037630852,
   "entries": {
     "Rust Benchmark": [
       {
@@ -27641,6 +27641,44 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci 20",
             "value": 20.417,
             "range": "± 4.037",
+            "unit": "us",
+            "extra": "100 samples\n2 iterations"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "committer": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "distinct": true,
+          "id": "e9ed3b7e23298ddb66770a3527a3744e78691eb4",
+          "message": "use GITHUB_TOKEN instead of PERSONAL_GITHUB_TOKEN",
+          "timestamp": "2020-12-15T15:05:59+02:00",
+          "tree_id": "ed70fa4e99f659d5532659c317e0c28c25fb7269",
+          "url": "https://github.com/mkungla/github-action-benchmark/commit/e9ed3b7e23298ddb66770a3527a3744e78691eb4"
+        },
+        "date": 1608037623111,
+        "tool": "catch2",
+        "benches": [
+          {
+            "name": "Fibonacci 10",
+            "value": 158,
+            "range": "± 45",
+            "unit": "ns",
+            "extra": "100 samples\n205 iterations"
+          },
+          {
+            "name": "Fibonacci 20",
+            "value": 18.652,
+            "range": "± 4.161",
             "unit": "us",
             "extra": "100 samples\n2 iterations"
           }
