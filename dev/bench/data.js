@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608037874623,
+  "lastUpdate": 1608037878764,
   "entries": {
     "Rust Benchmark": [
       {
@@ -18415,6 +18415,44 @@ window.BENCHMARK_DATA = {
             "range": "±0.41%",
             "unit": "ops/sec",
             "extra": "92 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "committer": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "distinct": true,
+          "id": "e14fd76f6d97b21969cec9c6439e7132a0398d3c",
+          "message": "update readme no need for PERSONAL_GITHUB_TOKEN",
+          "timestamp": "2020-12-15T15:08:58+02:00",
+          "tree_id": "c6bc68321cdc24a85e249a35eb232a78c4f582db",
+          "url": "https://github.com/mkungla/github-action-benchmark/commit/e14fd76f6d97b21969cec9c6439e7132a0398d3c"
+        },
+        "date": 1608037864476,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "fib(10)",
+            "value": 1252643,
+            "range": "±0.91%",
+            "unit": "ops/sec",
+            "extra": "89 samples"
+          },
+          {
+            "name": "fib(20)",
+            "value": 10450,
+            "range": "±0.94%",
+            "unit": "ops/sec",
+            "extra": "89 samples"
           }
         ]
       }
