@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608037613123,
+  "lastUpdate": 1608037620381,
   "entries": {
     "Rust Benchmark": [
       {
@@ -12063,6 +12063,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "BenchmarkFib20",
             "value": 48030,
+            "unit": "ns/op",
+            "extra": "30000 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "committer": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "distinct": true,
+          "id": "e9ed3b7e23298ddb66770a3527a3744e78691eb4",
+          "message": "use GITHUB_TOKEN instead of PERSONAL_GITHUB_TOKEN",
+          "timestamp": "2020-12-15T15:05:59+02:00",
+          "tree_id": "ed70fa4e99f659d5532659c317e0c28c25fb7269",
+          "url": "https://github.com/mkungla/github-action-benchmark/commit/e9ed3b7e23298ddb66770a3527a3744e78691eb4"
+        },
+        "date": 1608037599690,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 455,
+            "unit": "ns/op",
+            "extra": "3000000 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 57210,
             "unit": "ns/op",
             "extra": "30000 times\n2 procs"
           }
