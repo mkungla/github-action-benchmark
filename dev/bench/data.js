@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608038052040,
+  "lastUpdate": 1608038057585,
   "entries": {
     "Rust Benchmark": [
       {
@@ -6406,6 +6406,42 @@ window.BENCHMARK_DATA = {
             "name": "Fibonacci/Iterative/21",
             "value": 7,
             "range": "± 0",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "committer": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "distinct": true,
+          "id": "888feee8475f28b46b5f21119d27d021dbb39918",
+          "message": "Run go tests as subbenchmarks",
+          "timestamp": "2020-12-15T15:13:06+02:00",
+          "tree_id": "57388c51aeeae8f787b041934b51c69ecef2e1c0",
+          "url": "https://github.com/mkungla/github-action-benchmark/commit/888feee8475f28b46b5f21119d27d021dbb39918"
+        },
+        "date": 1608038035539,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "bench_fib_10",
+            "value": 231,
+            "range": "± 38",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "bench_fib_20",
+            "value": 31224,
+            "range": "± 4083",
             "unit": "ns/iter"
           }
         ]
