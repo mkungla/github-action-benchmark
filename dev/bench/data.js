@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608037870917,
+  "lastUpdate": 1608037874623,
   "entries": {
     "Rust Benchmark": [
       {
@@ -26405,6 +26405,42 @@ window.BENCHMARK_DATA = {
             "value": 29900.482434796413,
             "unit": "ns/iter",
             "extra": "iterations: 23427\ncpu: 29898.529474537932 ns\nthreads: 1"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "committer": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "distinct": true,
+          "id": "e14fd76f6d97b21969cec9c6439e7132a0398d3c",
+          "message": "update readme no need for PERSONAL_GITHUB_TOKEN",
+          "timestamp": "2020-12-15T15:08:58+02:00",
+          "tree_id": "c6bc68321cdc24a85e249a35eb232a78c4f582db",
+          "url": "https://github.com/mkungla/github-action-benchmark/commit/e14fd76f6d97b21969cec9c6439e7132a0398d3c"
+        },
+        "date": 1608037863818,
+        "tool": "googlecpp",
+        "benches": [
+          {
+            "name": "fib_10",
+            "value": 186.4578918825626,
+            "unit": "ns/iter",
+            "extra": "iterations: 3678685\ncpu: 186.43741690305094 ns\nthreads: 1"
+          },
+          {
+            "name": "fib_20",
+            "value": 25011.439357629155,
+            "unit": "ns/iter",
+            "extra": "iterations: 27959\ncpu: 25008.318716692298 ns\nthreads: 1"
           }
         ]
       }
