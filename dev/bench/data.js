@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608038035586,
+  "lastUpdate": 1608038041571,
   "entries": {
     "Rust Benchmark": [
       {
@@ -23129,6 +23129,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000013970667343559761",
             "extra": "mean: 2.164646843011382 msec\nrounds: 465"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "committer": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "distinct": true,
+          "id": "888feee8475f28b46b5f21119d27d021dbb39918",
+          "message": "Run go tests as subbenchmarks",
+          "timestamp": "2020-12-15T15:13:06+02:00",
+          "tree_id": "57388c51aeeae8f787b041934b51c69ecef2e1c0",
+          "url": "https://github.com/mkungla/github-action-benchmark/commit/888feee8475f28b46b5f21119d27d021dbb39918"
+        },
+        "date": 1608038033665,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 48369.55295884355,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000023491954010262598",
+            "extra": "mean: 20.67416254293016 usec\nrounds: 28817"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 415.4461480023171,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00014152608134600263",
+            "extra": "mean: 2.407050841146378 msec\nrounds: 384"
           }
         ]
       }
