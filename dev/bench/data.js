@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1591796792063,
+  "lastUpdate": 1608036216238,
   "entries": {
     "Rust Benchmark": [
       {
@@ -12027,6 +12027,42 @@ window.BENCHMARK_DATA = {
           {
             "name": "BenchmarkFib20",
             "value": 51307,
+            "unit": "ns/op",
+            "extra": "30000 times\n2 procs"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "aa6cd69176abdae95c2a48da0df63b7e6f26c366",
+          "message": "Update go.yml",
+          "timestamp": "2020-12-15T14:42:56+02:00",
+          "tree_id": "a67533be2be36d0e15ff8e85af73659f6dccb960",
+          "url": "https://github.com/mkungla/github-action-benchmark/commit/aa6cd69176abdae95c2a48da0df63b7e6f26c366"
+        },
+        "date": 1608036211996,
+        "tool": "go",
+        "benches": [
+          {
+            "name": "BenchmarkFib10",
+            "value": 400,
+            "unit": "ns/op",
+            "extra": "5000000 times\n2 procs"
+          },
+          {
+            "name": "BenchmarkFib20",
+            "value": 48030,
             "unit": "ns/op",
             "extra": "30000 times\n2 procs"
           }
@@ -27428,5 +27464,5 @@ window.BENCHMARK_DATA = {
       }
     ]
   },
-  "repoUrl": "https://github.com/rhysd/github-action-benchmark"
+  "repoUrl": "https://github.com/mkungla/github-action-benchmark"
 }
