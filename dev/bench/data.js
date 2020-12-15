@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608038046182,
+  "lastUpdate": 1608038052040,
   "entries": {
     "Rust Benchmark": [
       {
@@ -18513,6 +18513,44 @@ window.BENCHMARK_DATA = {
             "range": "±0.94%",
             "unit": "ops/sec",
             "extra": "89 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "committer": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "distinct": true,
+          "id": "888feee8475f28b46b5f21119d27d021dbb39918",
+          "message": "Run go tests as subbenchmarks",
+          "timestamp": "2020-12-15T15:13:06+02:00",
+          "tree_id": "57388c51aeeae8f787b041934b51c69ecef2e1c0",
+          "url": "https://github.com/mkungla/github-action-benchmark/commit/888feee8475f28b46b5f21119d27d021dbb39918"
+        },
+        "date": 1608038034185,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "fib(10)",
+            "value": 1086628,
+            "range": "±0.71%",
+            "unit": "ops/sec",
+            "extra": "91 samples"
+          },
+          {
+            "name": "fib(20)",
+            "value": 9010,
+            "range": "±0.59%",
+            "unit": "ops/sec",
+            "extra": "95 samples"
           }
         ]
       }
