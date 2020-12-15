@@ -207,23 +207,6 @@ $ git checkout --orphan gh-pages
 $ git push origin gh-pages:gh-pages
 ```
 
-Second, you need to [create a personal access token][help-personal-access-token]. As of now,
-[deploying a GitHub Pages branch fails with `$GITHUB_TOKEN` automatically generated for workflows](https://github.community/t5/GitHub-Actions/Github-action-not-triggering-gh-pages-upon-push/td-p/26869).
-`$GITHUB_TOKEN` can push a branch to remote, but building GitHub Pages fails. Please read
-[issue #1](https://github.com/rhysd/github-action-benchmark/issues/1) for more details.
-This is a current limitation only for public repositories. For private repository, `secrets.GITHUB_TOKEN`
-is available. In the future, this issue would be resolved and we could simply use `$GITHUB_TOKEN` to
-deploy a GitHub Pages branch.
-
-1. Go to your user settings page
-2. Enter 'Developer settings' tab
-3. Enter 'Personal access tokens' tab
-4. Click 'Generate new token' and enter your favorite token name
-5. Check `repo` scope for `git push` and click 'Generate token' at bottom
-6. Go to your repository settings page
-7. Enter 'Secrets' tab
-8. Create new `PERSONAL_GITHUB_TOKEN` secret with a generated token string
-
 Now you're ready for workflow setup.
 
 ```yaml
@@ -245,7 +228,7 @@ jobs:
           tool: 'go'
           output-file-path: output.txt
           # Personal access token to deploy GitHub Pages branch
-          github-token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           # Push and deploy GitHub pages branch automatically
           auto-push: true
 ```
@@ -286,7 +269,7 @@ If you don't want to pass GitHub API token to this action, it's still OK.
     auto-push: false
 # Push gh-pages branch by yourself
 - name: Push benchmark result
-  run: git push 'https://you:${{ secrets.PERSONAL_GITHUB_TOKEN }}@github.com/you/repo-name.git' gh-pages:gh-pages
+  run: git push 'https://you:${{ secrets.GITHUB_TOKEN }}@github.com/you/repo-name.git' gh-pages:gh-pages
 ```
 
 Please add a step to push the branch to the remote.
