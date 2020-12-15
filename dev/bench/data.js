@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608037864124,
+  "lastUpdate": 1608037867547,
   "entries": {
     "Rust Benchmark": [
       {
@@ -23017,6 +23017,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000360962811777139",
             "extra": "mean: 2.679740769841213 msec\nrounds: 378"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "committer": {
+            "email": "marko.kungla@gmail.com",
+            "name": "Marko Kungla",
+            "username": "mkungla"
+          },
+          "distinct": true,
+          "id": "e14fd76f6d97b21969cec9c6439e7132a0398d3c",
+          "message": "update readme no need for PERSONAL_GITHUB_TOKEN",
+          "timestamp": "2020-12-15T15:08:58+02:00",
+          "tree_id": "c6bc68321cdc24a85e249a35eb232a78c4f582db",
+          "url": "https://github.com/mkungla/github-action-benchmark/commit/e14fd76f6d97b21969cec9c6439e7132a0398d3c"
+        },
+        "date": 1608037863043,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "bench.py::test_fib_10",
+            "value": 55991.36176835364,
+            "unit": "iter/sec",
+            "range": "stddev: 4.7161714311753016e-7",
+            "extra": "mean: 17.859897820259853 usec\nrounds: 29585"
+          },
+          {
+            "name": "bench.py::test_fib_20",
+            "value": 461.96912130425613,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000013970667343559761",
+            "extra": "mean: 2.164646843011382 msec\nrounds: 465"
           }
         ]
       }
